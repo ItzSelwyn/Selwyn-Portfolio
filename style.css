@@ -77,6 +77,7 @@ a:hover {
 }
 
 .socials li {
+  width: 100px;
   background: #f5f5f5;
   padding: 8px 12px;
   border-radius: 6px;
@@ -92,4 +93,8 @@ a:hover {
 
 .socials a:hover {
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
 }
