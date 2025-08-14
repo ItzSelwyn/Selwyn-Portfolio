@@ -98,3 +98,32 @@ a:hover {
 address {
   font-style: normal;
 }
+
+.skills {
+  margin-bottom: -0.6rem;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills i {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #007acc;
+  font-size: 18px;
+}
+
+.skills li {
+  width: 104px;
+  background: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
