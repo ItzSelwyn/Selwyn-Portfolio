@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>InsightEd</title>
+<link rel="stylesheet" href="insigted.css" />
+</head>
+
+<body>
+
+  <main>
+
+    <h1>BLE Attendance System</h1>
+    <p class="subtitle">Android • BLE • ESP32 • Firebase</p>
+
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Taking attendance in large classrooms consumes valuable time every hour.
+        Proxy attendance is common, and faculty rarely get real-time visibility into
+        student activity. Our team set out to build a system that could automate this
+        entire process in the background — no queues, no manual entry, no errors.
+      </p>
+
+      <p>
+        The result is a <strong>Bluetooth Low Energy (BLE) Attendance System</strong>,
+        where every student’s phone becomes a secure digital identity. An ESP32 device
+        inside the classroom scans BLE packets, validates UUIDs, and pushes the data
+        to Firebase for instant attendance monitoring.
+      </p>
+
+      <ul class="card-list">
+        <li>Fully automated attendance system</li>
+        <li>Each student’s phone broadcasts a unique UUID</li>
+        <li>ESP32 scans & verifies active students</li>
+        <li>Secure cloud sync via Firebase</li>
+        <li>Teachers get real-time dashboards & analytics</li>
+      </ul>
+    </section>
+
+    <!-- Technologies -->
+    <section>
+      <h2>Technologies Used</h2>
+      <ul class="card-list">
+        <li><strong>Android Studio (Kotlin):</strong> Mobile App + BLE UUID Broadcasting</li>
+        <li><strong>ESP32 (Arduino/C++):</strong> BLE Scanner + Data Filtering</li>
+        <li><strong>Firebase:</strong> Real-time Database + Authentication + Analytics</li>
+      </ul>
+    </section>
+
+    <!-- Methodology -->
+    <section>
+      <h2>Methodology</h2>
+      <ul class="card-list">
+        <li>Student enters the classroom with the mobile app running</li>
+        <li>App continuously advertises a secure BLE UUID</li>
+        <li>ESP32 detects UUID & logs timestamp</li>
+        <li>Record is pushed instantly to Firebase</li>
+        <li>Teacher dashboard updates in real-time</li>
+      </ul>
+
+      <p>
+        <strong>Teacher Panel:</strong> A dynamic attendance dashboard displaying 
+        present/absent students, timestamps, and attendance history.
+      </p>
+    </section>
+
+    <!-- My Contribution -->
+    <section>
+      <h2>My Role</h2>
+      <ul class="card-list">
+        <li>Implemented BLE advertising in the Android app</li>
+        <li>Built ESP32-side scanning, filtering, and UUID validation</li>
+        <li>Integrated Firebase real-time sync and database structure</li>
+        <li>Created demo dashboards and documentation</li>
+      </ul>
+    </section>
+
+    <!-- Challenges -->
+    <section>
+      <h2>Challenges & Solutions</h2>
+      <ul class="card-list">
+        <li><strong>Unstable BLE Signal Strength:</strong> Solved by averaging RSSI and using stability thresholds.</li>
+        <li><strong>Duplicate UUID Detection:</strong> Added rolling time windows to prevent false positives.</li>
+        <li><strong>Battery Drain on Phones:</strong> Switched to low-energy advertising mode.</li>
+        <li><strong>Cloud Sync Latency:</strong> Optimized Firebase write operations.</li>
+      </ul>
+    </section>
+
+    <!-- Feasibility -->
+    <section>
+      <h2>Feasibility & Viability</h2>
+      <ul class="card-list">
+        <li><strong>Technological:</strong> BLE works on nearly all modern smartphones.</li>
+        <li><strong>Operational:</strong> Easy deployment — just power the ESP32 unit.</li>
+        <li><strong>Legal:</strong> Only UUIDs are stored; no personal identifiers.</li>
+        <li><strong>Economical:</strong> Hardware cost ≈ ₹250–₹350 per classroom.</li>
+        <li><strong>Social:</strong> Saves time and encourages transparency.</li>
+      </ul>
+    </section>
+
+    <!-- Impacts -->
+    <section>
+      <h2>Impacts</h2>
+      <ul class="card-list">
+        <li>Automates attendance & eliminates manual errors</li>
+        <li>Real-time visibility for faculty</li>
+        <li>Stops proxy attendance</li>
+        <li>Provides daily, weekly, and monthly insights</li>
+      </ul>
+    </section>
+
+    <!-- Benefits -->
+    <section>
+      <h2>Benefits</h2>
+      <ul class="card-list">
+        <li><strong>Social:</strong> Transparent and error-free</li>
+        <li><strong>Economical:</strong> Scalable & affordable</li>
+        <li><strong>Eco-friendly:</strong> Paperless</li>
+        <li><strong>Contactless:</strong> Fully automated</li>
+        <li><strong>Coverage:</strong> Multiple BLE nodes for large rooms</li>
+      </ul>
+    </section>
+
+    <!-- Outcome -->
+    <section>
+      <h2>Outcome & Future Scope</h2>
+      <ul class="card-list">
+        <li>Achieved reliable detection with over 95% accuracy</li>
+        <li>Significant reduction in manual workload for faculty</li>
+        <li>Successfully demonstrated in a classroom environment</li>
+        <li>Plan to add offline caching & multi-classroom sync</li>
+      </ul>
+    </section>
+
+    <!-- Team -->
+    <section>
+      <h2>Our Team</h2>
+      <div class="team-list">
+        <span><a href="https://www.linkedin.com/in/nigesh-satheesh-20339a377/">Nigesh Satheesh</a></span>
+        <span><a href="https://www.linkedin.com/in/divyadharshini-balakrishnan-54848b380/">Divyadharshini Balakrishnan</a></span>
+        <span><a href="https://www.linkedin.com/in/kavinaya-sekar-40368b37b/">Kavinaya Sekar</a></span>
+        <span><a href="https://www.linkedin.com/in/pallavi-m-bb376838a/">Pallavi M</a></span>
+        <span><a href="https://www.linkedin.com/in/kavin-nizvan-966356380/">Kavin Nizvan</a></span>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+      <h2>Gallery</h2>
+      <div class="media-grid">
+        <img src="media/icon1.jpg">
+        <img src="media/slide1.jpg">
+        <img src="media/slide2.jpg">
+        <img src="media/slide3.jpg">
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section>
+      <h2>Demo</h2>
+      <div class="media-grid">
+        <video src="media/demo.mp4" controls></video>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

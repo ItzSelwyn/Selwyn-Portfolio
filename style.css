@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 2rem
 }
@@ -19,7 +19,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    color: #222
 }
 
 header p {
@@ -45,7 +46,7 @@ section {
 }
 
 h2 {
-    color: #444;
+    color: #333;
     margin-bottom: .5rem
 }
 
@@ -53,11 +54,11 @@ a:hover {
     text-decoration: underline
 }
 
-.skills,.socials {
+.skills,.socials,.projects {
     margin-bottom: -.6rem
 }
 
-.skills ul,.socials ul {
+.skills ul,.socials ul,.projects ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -65,12 +66,12 @@ a:hover {
     flex-wrap: wrap
 }
 
-.skills i,.socials i {
+.skills i,.socials i,.projects i {
     margin-right: 12px;
     vertical-align: middle
 }
 
-.skills li,.socials li {
+.skills li,.socials li,.projects li {
     background: #f5f5f5;
     padding: 8px 12px;
     display: inline-block;
@@ -109,4 +110,49 @@ address {
     width: 104px;
     border-radius: 5px;
     margin-right: 6px
+}
+
+/* PROJECTS SECTION */
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: .8rem;
+}
+
+.project-item {
+    background: #f5f5f5;
+    padding: 14px 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    transition: background .2s;
+}
+
+.project-item:hover {
+    background: #e0e0e0;
+}
+
+.project-item h3 {
+    margin: 0 0 .3rem;
+    color: #444;
+    font-size: 1.2rem;
+}
+
+.project-item p {
+    margin: 0 0 .5rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.project-link {
+    color: #0055d4;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
 }
