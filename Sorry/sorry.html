@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>I’m Sorry 🤍</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffdee9, #b5fffc);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      z-index: 2;
+    }
+
+    h1 {
+      color: #ff5e8e;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .signature {
+      margin-top: 25px;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* Floating shapes */
+    .float {
+      position: absolute;
+      font-size: 18px;
+      animation: floatUp 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.7; }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating hearts & stars -->
+  <script>
+    const symbols = ["🫠", "🙃", "✨", "💫", "💖"];
+    for (let i = 0; i < 30; i++) {
+      const span = document.createElement("span");
+      span.className = "float";
+      span.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+      span.style.left = Math.random() * 100 + "vw";
+      span.style.animationDuration = 6 + Math.random() * 6 + "s";
+      span.style.fontSize = 14 + Math.random() * 20 + "px";
+      document.body.appendChild(span);
+    }
+  </script>
+
+  <!-- Apology card -->
+  <div class="card">
+    <h1>I’m truly sorry 🖤</h1>
+    <p>
+      I didn’t stop to think about how you would feel,  
+      and that hurts me deeply now.
+    </p>
+    <p>
+      After everything you did for me,
+      and knowing how much you care about me and our relationship.
+    </p>
+    <p>
+      On the very first day of the year, I hurt you, 
+      I should have been more careful, more kind,  
+      and more aware of your heart.
+    </p>
+    <p>
+      I never meant to hurt you.  
+      I’m owning my mistake — no excuses.
+    </p>
+    <p>
+      I just wanted you to know that you matter to me,
+      and your feelings always should have come first.
+    </p>
+    <div class="signature">
+      — From someone who is learning, and truly sorry
+    </div>
+  </div>
+
+</body>
+</html>

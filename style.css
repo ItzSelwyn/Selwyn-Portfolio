@@ -101,16 +101,41 @@ address {
     color: #0055d4
 }
 
-.skills i {
-    margin-right: 8px;
-    font-size: 18px
+/* SKILLS SECTION */
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .skills li {
+    background: #f5f5f5;
+    padding: 8px 12px;
+    display: flex;               /* important */
+    align-items: center;         /* icon + text alignment */
+    margin-bottom: 10px;
     width: 104px;
     border-radius: 5px;
-    margin-right: 6px
+    margin-right: 6px;
 }
+
+.skills i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #0055d4;
+}
+
+.skills-icon {
+    width: 18px;                 /* same visual size as Font Awesome */
+    height: 18px;
+    margin-right: 8px;
+    object-fit: contain;
+    display: inline-block;       /* keeps spacing correct */
+}
+
 
 /* PROJECTS SECTION */
 
