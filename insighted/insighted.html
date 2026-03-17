@@ -166,8 +166,9 @@
     <!-- Demo -->
     <section>
       <h2>Demo</h2>
-      <div class="media-grid">
-        <video src="media/demo.mp4" controls class="clickable-video"></video>
+        <div class="video-wrapper clickable-video" data-video="media/demo.mp4">
+        <img src="media/demo-thumb.png" alt="Demo Video">
+        <div class="play-button">▶</div>
       </div>
     </section>
 
@@ -206,18 +207,20 @@ document.querySelectorAll(".clickable-img").forEach(img => {
 
 /* VIDEO CLICK */
 
-document.querySelectorAll(".clickable-video").forEach(video => {
-  video.addEventListener("click", function () {
+document.querySelectorAll(".clickable-video").forEach(wrapper => {
+
+  wrapper.addEventListener("click", function(){
 
     modal.style.display = "block";
 
     modalImg.style.display = "none";
     modalVideo.style.display = "block";
 
-    modalVideo.src = this.src;
+    modalVideo.src = this.dataset.video;
     modalVideo.play();
 
   });
+
 });
 
 /* CLOSE BUTTON */
