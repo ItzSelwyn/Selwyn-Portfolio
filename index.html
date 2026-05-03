@@ -1,159 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="This is a personal Portfolio showcasing my projects, skills, and creative work in Web Development and Artificial Intelligence.">
-  <meta name="keywords" content="Selwyn Jesudas, Portfolio, Developer, Student, Designer">
-  <meta name="author" content="Selwyn Jesudas">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selwyn Jesudas</title>
-  <style async>
-    body {
-        margin: 0;padding: 0;
-        font-family: "Segoe UI",sans-serif;
-        background-color: #f4f4f4;
-        color: #333
+    <!-- Primary SEO -->
+    <title>Selwyn Jesudas</title>
+    <meta name="description" content="Personal portfolio of Selwyn Jesudas — AI & Data Science student at SKCET, Web Developer. Showcasing projects." />
+    <meta name="keywords" content="Selwyn Jesudas, Portfolio, Developer, Student, AI, Data Science, React, Python, SKCET, Tamil Nadu" />
+    <meta name="author" content="Selwyn Jesudas" />
+    <link rel="canonical" href="https://selwynjesudas.com" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:url" content="https://selwynjesudas.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Selwyn Jesudas" />
+    <meta property="og:description" content="Personal portfolio of Selwyn Jesudas — AI & Data Science student at SKCET, Web Developer." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Selwyn Jesudas" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:domain" content="selwynjesudas.com" />
+    <meta name="twitter:url" content="https://selwynjesudas.com" />
+    <meta name="twitter:title" content="Selwyn Jesudas" />
+    <meta name="twitter:description" content="Personal portfolio of Selwyn Jesudas — AI & Data Science student at SKCET, Web Developer." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <!-- Schema.org — Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://selwynjesudas.com",
+      "name": "Selwyn Jesudas Portfolio",
+      "description": "Personal portfolio of Selwyn Jesudas showcasing skills, projects, and contact information.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Selwyn Jesudas"
+      }
     }
-    .container {
-        max-width: 800px;margin: auto;padding: 2rem
-    }
-    header {text-align: center;margin-bottom: 3rem
-    }
-    header h1 {margin: 0;font-size: 2.5rem
-    }
-    header p {font-size: 1.2rem;color: #666
-    }
-    .profile-image {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 3.5px solid #3f3f3f;
-        margin-bottom: 1rem;
-        box-shadow: 0 4px 10px rgba(0,0,0,.1);
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-    }
-  </style>
-  <link rel="canonical" href="https://selwynjesudas.com" /> 
-  <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/style.css"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- favicons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
-  <!-- schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://selwynjesudas.com",
-    "name": "Selwyn Jesudas Portfolio",
-    "description": "Personal portfolio of Selwyn Jesudas showcasing skills, projects, and contact information.",
-    "publisher": {
+    </script>
+
+    <!-- Schema.org — Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Selwyn Jesudas"
+      "name": "Selwyn Jesudas",
+      "url": "https://selwynjesudas.com",
+      "image": "https://selwynjesudas.com/images/selwyn.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/selwyn-jesudas/",
+        "https://github.com/ItzSelwyn",
+        "https://www.instagram.com/itz_selwyn/",
+        "https://www.facebook.com/profile.php?id=61576403366342"
+      ],
+      "jobTitle": "Student / Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Sri Krishna College of Engineering and Technology"
+      }
     }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Selwyn Jesudas",
-    "url": "https://selwynjesudas.com",
-    "image": "https://selwynjesudas.com/images/selwyn.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/selwyn-jesudas/",
-      "https://github.com/ItzSelwyn",
-      "https://www.instagram.com/itz_selwyn/",
-      "https://https://www.facebook.com/profile.php?id=61576403366342"
-    ],
-    "jobTitle": "Student / Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Sri Krishna College of Engineering and Technology"
-    }
-  }
-  </script>
+    </script>
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://selwynjesudas.com">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Selwyn Jesudas">
-  <meta property="og:description" content="This is a personal Portfolio showcasing my projects, skills, and creative work in Web Development and Artificial Intelligence.">
-  <meta property="og:image" content="/images/og-image.jpg">
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="selwynjesudas.com">
-  <meta property="twitter:url" content="https://selwynjesudas.com">
-  <meta name="twitter:title" content="Selwyn Jesudas">
-  <meta name="twitter:description" content="This is a personal Portfolio showcasing my projects, skills, and creative work in Web Development and Artificial Intelligence.">
-  <meta name="twitter:image" content="/images/og-image.jpg">
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <h1>Selwyn Jesudas</h1>
-      <p>Developer • Student • Designer</p>
-    </header>
-    <img src="/images/selwyn.jpg" alt="Selwyn Jesudas" class="profile-image" width="200" height=""/>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Selwyn Jesudas, a tech enthusiast and developer with a passion for building cool things on the web.
-        I'm currently a student at <a href="https://skcet.ac.in/" target="_blank">SKCET</a>, studying Artificial Intelligence and Data Science.
-        I'm  exploring Web Technologies, Programming, Artificial Intelligence, and working on personal projects like this site!
-      </p>
-    </section>
-
-    <section class="socials">
-      <h2>Connect With Me</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/selwyn-jesudas/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-        <li><a href="https://github.com/ItzSelwyn" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-        <li><a href="https://www.instagram.com/itz_selwyn/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=61576403366342" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
-      </ul>
-    </section>
-    
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><i class="fab fa-html5"></i> HTML5</li>
-        <li><i class="fab fa-css3-alt"></i> CSS3</li>
-        <li><i class="fab fa-js-square"></i> JavaScript</li>
-        <li><i class="fab fa-git-alt"></i> Git</li>
-        <li><img src="/images/c-logo.png" alt="C Logo" class="skills-icon"> C</li>
-      </ul>
-    </section>
-    
-    <section class="projects">
-  <h2>Projects</h2>
-
-  <div class="project-list">
-    <div class="project-item">
-      <h3>InsightEd</h3>
-      <p>A Bluetooth Low Energy (BLE) Attendance System that automates attendance using smartphones and ESP32.</p>
-      <a href="/insighted/insighted.html" target="_blank" class="project-link">View Project →</a>
-    </div>
-
-  </div>
-</section>
-
-    <section class="contact">
-      <h2>Contact</h2>
-      <address>
-      <p>Email: <a href="#" id="email-link">Email Me</a></p>
-      <p>Phone: <a href="#" id="phone-link">Call Me</a></p>
-      </address>
-      <script src="/encrypt.js"></script>
-    </section>
-  </div>
-</body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

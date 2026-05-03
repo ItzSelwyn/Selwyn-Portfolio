@@ -1,0 +1,121 @@
+.contact {
+  padding: 4rem 0 4rem;
+  border-top: 1px solid var(--rule);
+}
+
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+/* ---- Left ---- */
+.contact__heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 7vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 1.5rem 0 1.5rem;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.contact__heading em {
+  font-style: normal;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 2px;
+}
+
+.contact__subtext {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+/* ---- Right ---- */
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--rule);
+  margin-top: 0.5rem;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.contact__link:hover {
+  background: #f7f7f7;
+  margin: 0 -1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.contact__link:hover .contact__link-arrow {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.contact__link-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.contact__link-value {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__link-arrow {
+  opacity: 0.25;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+@media (max-width: 900px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+/* ---- Mobile fix ---- */
+@media (max-width: 480px) {
+  .contact__heading {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .contact__link {
+    gap: 0.75rem;
+  }
+
+  .contact__link-label {
+    width: 62px;
+  }
+
+  .contact__link-value {
+    font-size: 0.8rem;
+  }
+}

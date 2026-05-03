@@ -1,0 +1,30 @@
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__name {
+  font-family: var(--font-display);
+  font-weight: 720;
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
+}
+
+.footer__dot {
+  opacity: 0.4;
+}
+
+.footer__copy {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}

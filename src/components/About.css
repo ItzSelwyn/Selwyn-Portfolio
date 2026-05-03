@@ -1,0 +1,92 @@
+.about {
+  padding: 4rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.about__header {
+  margin-bottom: var(--space-lg);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.about__headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.about__headline em {
+  font-style: normal;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 1px;
+}
+
+.about__bio {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink-2);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.about__skills {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about__skill-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about__skill-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  width: 90px;
+  flex-shrink: 0;
+  padding-top: 0.35rem;
+}
+
+.about__skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about__tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--ink-2);
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.about__tag:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
