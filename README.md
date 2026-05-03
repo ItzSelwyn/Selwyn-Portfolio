@@ -27,7 +27,7 @@ Personal portfolio website built with React + Vite. Designed with a clean editor
 ## Project Structure
 
 ```
-portfolio
+selwyn-portfolio
 ├── .gitignore
 ├── 404.html
 ├── README.md
