@@ -13,6 +13,16 @@ const projects = [
   },
   {
     number: '02',
+    title: 'RAPID-100',
+    description:
+      'An AI-powered emergency call triage system that transcribes calls in real time, classifies incident type and severity, and generates structured summaries for dispatchers.',
+    stack: ['Python', 'Gemini AI', 'FastAPI', 'Twilio'],
+    link: '/rapid-100',
+    internal: true,
+    status: 'Live',
+  },
+  {
+    number: '03',
     title: 'This Portfolio',
     description:
       'Designed and built from scratch in React + Vite. Focused on minimal aesthetics, editorial typography, and fast load times — no unnecessary dependencies.',

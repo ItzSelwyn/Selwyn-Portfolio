@@ -7,11 +7,15 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import InsightEd from './components/InsightEd'
+import Rapid100 from './components/Rapid100'
+import NotFound from './components/NotFound'
 
 function getPage() {
   const path = window.location.pathname
+  if (path === '/' || path === '') return 'home'
   if (path.includes('insighted')) return 'insighted'
-  return 'home'
+  if (path.includes('rapid-100')) return 'rapid100'
+  return '404'
 }
 
 export default function App() {
@@ -31,13 +35,19 @@ export default function App() {
     }
   }, [])
 
+  const goHome = () => {
+    window.history.pushState({}, '', '/')
+    setPage('home')
+    window.scrollTo(0, 0)
+  }
+
+  const show404 = page === '404'
+
   return (
     <>
-      <Navbar onNavigate={() => { window.history.pushState({}, '', '/'); setPage('home'); window.scrollTo(0,0) }} />
+      {!show404 && <Navbar onNavigate={goHome} />}
       <main>
-        {page === 'insighted' ? (
-          <InsightEd />
-        ) : (
+        {page === 'home' && (
           <>
             <Hero />
             <About />
@@ -45,8 +55,11 @@ export default function App() {
             <Contact />
           </>
         )}
+        {page === 'insighted' && <InsightEd />}
+        {page === 'rapid100' && <Rapid100 />}
+        {page === '404' && <NotFound />}
       </main>
-      <Footer />
+      {!show404 && <Footer />}
     </>
   )
 }

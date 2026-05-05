@@ -1,7 +1,10 @@
 import './Navbar.css'
 
 export default function Navbar({ onNavigate }) {
-  const isInsightEd = window.location.pathname.includes('insighted')
+  const path = window.location.pathname
+  const isInsightEd = path.includes('insighted')
+  const isRapid100 = path.includes('rapid-100')
+  const isProjectPage = isInsightEd || isRapid100
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -18,8 +21,17 @@ export default function Navbar({ onNavigate }) {
     { label: 'Team', id: 'ie-team' },
   ]
 
+  // Links for RAPID-100 case study page
+  const rapid100Links = [
+    { label: 'Overview', id: 'r1-overview' },
+    { label: 'How It Works', id: 'r1-how' },
+    { label: 'My Role', id: 'r1-team' },
+  ]
+
   // Links for home page
   const homeLinks = ['about', 'work', 'contact']
+
+  const projectLinks = isInsightEd ? insightEdLinks : rapid100Links
 
   return (
     <header className="navbar">
@@ -31,8 +43,8 @@ export default function Navbar({ onNavigate }) {
         </div>
 
         <nav className="navbar__links">
-          {isInsightEd ? (
-            insightEdLinks.map(({ label, id }) => (
+          {isProjectPage ? (
+            projectLinks.map(({ label, id }) => (
               <button
                 key={id}
                 className="navbar__link"
