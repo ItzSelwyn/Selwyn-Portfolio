@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import InsightEd from './components/InsightEd'
 import Rapid100 from './components/Rapid100'
+import MetroMind from './components/MetroMind'
 import NotFound from './components/NotFound'
 
 function getPage() {
@@ -15,6 +16,7 @@ function getPage() {
   if (path === '/' || path === '') return 'home'
   if (path.includes('insighted')) return 'insighted'
   if (path.includes('rapid-100')) return 'rapid100'
+  if (path.includes('metromind')) return 'metromind'
   return '404'
 }
 
@@ -57,6 +59,7 @@ export default function App() {
         )}
         {page === 'insighted' && <InsightEd />}
         {page === 'rapid100' && <Rapid100 />}
+        {page === 'metromind' && <MetroMind />}
         {page === '404' && <NotFound />}
       </main>
       {!show404 && <Footer />}

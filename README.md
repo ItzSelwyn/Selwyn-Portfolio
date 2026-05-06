@@ -21,6 +21,8 @@ Personal portfolio website built with React + Vite. Designed with a clean editor
 |---|---|
 | `/` | Home — Hero, About, Projects, Contact |
 | `/insighted` | InsightEd  — BLE attendance system |
+| `/rapid-100` | Rapid-100 — AI-powered emergency call triage system |
+| `/metromind` | MetroMind — Full-stack smart-city dashboard |
 
 ---
 
@@ -29,17 +31,17 @@ Personal portfolio website built with React + Vite. Designed with a clean editor
 ```
 selwyn-portfolio
 ├── .gitignore
-├── 404.html
 ├── README.md
 ├── index.html
 ├── package-lock.json
 ├── package.json
 ├── public
+│   ├── _redirects
 │   ├── apple-touch-icon.png
 │   ├── favicon.svg
-│   └── og-image.jpg
-├── robots.txt
-├── sitemap.xml
+│   ├── og-image.jpg
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src
 │   ├── App.jsx
 │   ├── components
@@ -53,10 +55,16 @@ selwyn-portfolio
 │   │   ├── Hero.jsx
 │   │   ├── InsightEd.css
 │   │   ├── InsightEd.jsx
+│   │   ├── MetroMind.css
+│   │   ├── MetroMind.jsx
 │   │   ├── Navbar.css
 │   │   ├── Navbar.jsx
+│   │   ├── NotFound.css
+│   │   ├── NotFound.jsx
 │   │   ├── Projects.css
-│   │   └── Projects.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Rapid100.css
+│   │   └── Rapid100.jsx
 │   ├── main.jsx
 │   └── styles
 │       └── global.css
@@ -68,7 +76,6 @@ selwyn-portfolio
 - Meta tags, Open Graph, and Twitter Card in `index.html`
 - Schema.org structured data (Person + WebSite)
 - `sitemap.xml` and `robots.txt` in `/public/`
-- Custom `404.html` in `/public/`
 
 ---
 

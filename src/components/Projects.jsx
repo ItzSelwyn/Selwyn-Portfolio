@@ -23,9 +23,17 @@ const projects = [
   },
   {
     number: '03',
+    title: 'MetroMind',
+    description: 'A full-stack smart-city dashboard combining live map visualisation with real-time traffic simulation — block roads, spawn vehicles, and watch AI rerouting respond.',
+    stack: ['React', 'FastAPI', 'OSMnx', 'Docker'],
+    link: '/metromind',
+    internal: true,
+    status: 'Live',
+  },
+  {
+    number: '04',
     title: 'This Portfolio',
-    description:
-      'Designed and built from scratch in React + Vite. Focused on minimal aesthetics, editorial typography, and fast load times — no unnecessary dependencies.',
+    description: 'Designed and built from scratch in React + Vite. Focused on minimal aesthetics, editorial typography, and fast load times — no unnecessary dependencies.',
     stack: ['React', 'Vite', 'CSS'],
     link: 'https://github.com/ItzSelwyn/Selwyn-Portfolio',
     internal: false,
