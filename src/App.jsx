@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './styles/global.css'
+import { useDocumentHead } from './utils/useDocumentHead'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -22,6 +23,9 @@ function getPage() {
 
 export default function App() {
   const [page, setPage] = useState(getPage)
+
+  // Update document head metadata when page changes
+  useDocumentHead(page === '404' ? 'notfound' : page)
 
   useEffect(() => {
     const handler = () => setPage(getPage())
