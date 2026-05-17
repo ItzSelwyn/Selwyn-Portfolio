@@ -9,24 +9,44 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="container hero__inner">
 
-        {/* Top line */}
+        {/* Eyebrow */}
         <div className="hero__eyebrow">
           <span className="section-label">Based in Tamil Nadu, India</span>
         </div>
 
-        {/* Main display text — Bazil-style layered typography */}
-        <div className="hero__type-block">
-          <h1 className="hero__name">Selwyn<br />Jesudas</h1>
-          <p className="hero__ghost-title" aria-hidden="true">Developer</p>
+        {/* Layered depth hero */}
+        <div className="hero__stage">
+
+          {/* Row 1 — "Selwyn" — z-index above photo */}
+          <div className="hero__row hero__row--back">
+            <h1 className="hero__name hero__name--line1">Selwyn</h1>
+          </div>
+
+          {/* Photo layer — sits between the two name rows */}
+          <div className="hero__photo-layer">
+            <img
+              src="/Selwyn.webp"
+              alt="Selwyn Jesudas"
+              className="hero__photo"
+              fetchpriority="high"
+            />
+            {/* Fade strip at the bottom to blend into page */}
+            <div className="hero__photo-fade" />
+          </div>
+
+          {/* Row 2 — "Jesudas" — z-index below photo */}
+          <div className="hero__row hero__row--front">
+            <h1 className="hero__name hero__name--line2">Jesudas</h1>
+          </div>
+
         </div>
 
-        {/* Bottom row: subtitle + buttons */}
+        {/* Bottom row — subtitle + buttons */}
         <div className="hero__bottom">
-          <p className="hero__subtitle">
-            AI & Data Science Student<br />
+          <div>
+            <p className="hero__subtitle">AI & Data Science Student</p>
             <span className="hero__subtitle--secondary">Web Developer · SKCET</span>
-          </p>
-
+          </div>
           <div className="hero__actions">
             <button className="btn btn--primary" onClick={() => scrollTo('work')}>
               View Work
@@ -37,13 +57,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Horizontal rule */}
+        {/* Rule */}
         <div className="hero__rule" />
 
-        {/* Marquee strip */}
+        {/* Marquee */}
         <div className="hero__tape">
           <div className="hero__tape-inner">
-            {['Python', 'React', 'JavaScript', 'Machine Learning', 'Data Science', 'HTML & CSS', 'Git', 'C', 'BLE / IoT', 'Python', 'React', 'JavaScript', 'Machine Learning', 'Data Science', 'HTML & CSS', 'Git', 'C', 'BLE / IoT'].map((item, i) => (
+            {['Python', 'React', 'JavaScript', 'Machine Learning', 'Data Science', 'HTML & CSS', 'Git', 'C', 'BLE / IoT',
+              'Python', 'React', 'JavaScript', 'Machine Learning', 'Data Science', 'HTML & CSS', 'Git', 'C', 'BLE / IoT'].map((item, i) => (
               <span key={i} className="hero__tape-item">
                 {item} <span className="hero__tape-dot">·</span>
               </span>
