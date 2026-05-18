@@ -24,6 +24,11 @@
   "source": "dist",
   "inlineCss": true,
 
+  "puppeteerArgs": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox"
+  ],
+
   "routes": [
     "/",
     "/insighted",
