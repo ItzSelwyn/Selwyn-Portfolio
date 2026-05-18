@@ -12,6 +12,11 @@
   margin-bottom: 7rem;
 }
 
+.hero__ghost-title{
+  display: none;
+}
+
+
 /* ============================================
    STAGE — layered depth effect
    ============================================ */
@@ -317,6 +322,22 @@
   margin-left: 0rem;
   }
 
+  .hero__ghost-title{
+    display: block;
+    position: absolute;
+    bottom: -0.15em;
+    right: 0.9em;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.7rem, 9vw, 4.8rem);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--rule);
+    pointer-events: none;
+    z-index: -1;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 480px) {
@@ -339,4 +360,10 @@
   padding-bottom: 0.05em;
   margin-left: 0rem;
 }
+
+  .hero__ghost-title{
+    bottom: -0.15em;
+    right: -0.02em;
+  }
+
 }

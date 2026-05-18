@@ -37,8 +37,9 @@ export default function Hero() {
           {/* Row 2 — "Jesudas" — z-index below photo */}
           <div className="hero__row hero__row--front">
             <h1 className="hero__name hero__name--line2">Jesudas</h1>
+            <p className="hero__ghost-title" aria-hidden="true">Developer</p>
           </div>
-
+          
         </div>
 
         {/* Bottom row — subtitle + buttons */}

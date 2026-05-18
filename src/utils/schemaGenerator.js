@@ -19,7 +19,7 @@ export const generatePersonSchema = () => ({
   '@type': 'Person',
   name: 'Selwyn Jesudas',
   url: BASE_URL,
-  image: `${BASE_URL}/images/selwyn.jpg`,
+  image: `${BASE_URL}/selwyn.webp`,
   description: 'AI & Data Science student at SKCET, Full-stack Developer',
   sameAs: [
     'https://www.linkedin.com/in/selwyn-jesudas/',
@@ -27,8 +27,8 @@ export const generatePersonSchema = () => ({
     'https://www.instagram.com/itz_selwyn/',
     'https://www.facebook.com/profile.php?id=61576403366342',
   ],
-  jobTitle: 'Student / Developer',
-  worksFor: {
+  jobTitle: 'AI & Full Stack Developer',
+  alumniOf: {
     '@type': 'Organization',
     name: 'Sri Krishna College of Engineering and Technology',
   },
@@ -51,7 +51,6 @@ export const generateProjectSchema = (project) => ({
     priceCurrency: 'USD',
   },
   image: `${BASE_URL}${project.image}`,
-  datePublished: project.datePublished,
   keywords: project.keywords,
   featureList: project.features,
 })
@@ -62,8 +61,7 @@ export const generateInsightEdSchema = () =>
     description:
       'A Bluetooth Low Energy attendance system that automates classroom roll-call using ESP32 microcontrollers and students smartphones.',
     path: '/insighted',
-    image: '/og-image-insighted.jpg',
-    datePublished: '2025-01-15',
+    image: '/og-image.jpg',
     keywords: 'BLE, ESP32, Kotlin, Firebase, Attendance, IoT',
     features: [
       'Bluetooth Low Energy scanning',
@@ -80,8 +78,7 @@ export const generateRapid100Schema = () =>
     description:
       'An AI-powered emergency call triage system that transcribes calls in real time, classifies incidents by type and severity, and generates structured summaries.',
     path: '/rapid-100',
-    image: '/og-image-rapid100.jpg',
-    datePublished: '2025-02-10',
+    image: '/og-image.jpg',
     keywords: 'Emergency Services, AI, Gemini API, FastAPI, Speech-to-Text',
     features: [
       'Real-time speech-to-text transcription',
@@ -98,8 +95,7 @@ export const generateMetroMindSchema = () =>
     description:
       'A full-stack smart-city dashboard combining live map visualization with real-time traffic simulation on actual OpenStreetMap road networks.',
     path: '/metromind',
-    image: '/og-image-metromind.jpg',
-    datePublished: '2025-03-05',
+    image: '/og-image.jpg',
     keywords: 'Smart City, Traffic Simulation, Dijkstra, OpenStreetMap, Docker',
     features: [
       'Real OpenStreetMap road data',
