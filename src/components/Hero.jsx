@@ -25,7 +25,7 @@ export default function Hero() {
           {/* Photo layer — sits between the two name rows */}
           <div className="hero__photo-layer">
             <img
-              src="/Selwyn.webp"
+              src="/selwyn.webp"
               alt="Selwyn Jesudas"
               className="hero__photo"
               fetchpriority="high"
@@ -37,16 +37,16 @@ export default function Hero() {
           {/* Row 2 — "Jesudas" — z-index below photo */}
           <div className="hero__row hero__row--front">
             <h1 className="hero__name hero__name--line2">Jesudas</h1>
-            <p className="hero__ghost-title" aria-hidden="true">Developer</p>
+            <p className="hero__ghost-title" aria-hidden="true">AI & Full Stack Developer</p>
           </div>
-          
+
         </div>
 
         {/* Bottom row — subtitle + buttons */}
         <div className="hero__bottom">
           <div>
             <p className="hero__subtitle">AI & Data Science Student</p>
-            <span className="hero__subtitle--secondary">Web Developer · SKCET</span>
+            <span className="hero__subtitle--secondary">Full Stack Developer · SKCET</span>
           </div>
           <div className="hero__actions">
             <button className="btn btn--primary" onClick={() => scrollTo('work')}>
